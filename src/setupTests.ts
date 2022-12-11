@@ -5,6 +5,11 @@
 import '@testing-library/jest-dom';
 import {server} from "./mocks/server";
 
+
+/**
+ * Thus there is no need to manually call
+ * the same stuff in every test suit
+ */
 beforeAll(() => server.listen())
 // Reset any request handlers that we may add during the tests,
 // so they don't affect other tests.
